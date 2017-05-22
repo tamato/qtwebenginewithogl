@@ -19,10 +19,10 @@ void NativeContext::create()
     ctx->create();
 }
 
-void NativeContext::create(NativeContext* shared)
+void NativeContext::create(NativeContext* shared, WId winId)
 {
     ctx = new ContextLinux();
-    ctx->create(shared->ctx);
+    ctx->create(shared->ctx, winId);
 }
 
 void NativeContext::makeCurrent()

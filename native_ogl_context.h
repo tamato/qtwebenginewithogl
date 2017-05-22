@@ -10,7 +10,7 @@ public:
     ~NativeContext();
 
     void create();
-    void create(NativeContext* shared);
+    void create(NativeContext* shared, WId winId);
     void makeCurrent();
     void doneCurrent();
     void swapBuffers();

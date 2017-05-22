@@ -15,7 +15,7 @@ public:
     ~ContextLinux();
 
     virtual void create();
-    virtual void create(ContextInterface*);
+    virtual void create(ContextInterface*, WId);
     virtual void makeCurrent();
     virtual void doneCurrent();
     virtual void swapBuffers();

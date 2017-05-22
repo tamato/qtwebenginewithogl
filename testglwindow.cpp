@@ -12,7 +12,7 @@ TestGLWindow::TestGLWindow()
     }
 
     m_Ctx = new NativeContext;
-    m_Ctx->create(m_SharedCtx);
+    m_Ctx->create(m_SharedCtx, winId());
 }
 
 void TestGLWindow::paintEvent(QPaintEvent* /*event*/)
